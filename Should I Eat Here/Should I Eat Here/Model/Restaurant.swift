@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class Restaurant: Decodable {
+    let address: String
+    let akaName: String
+    let city: String
+    let state: String
+    let dbaName: String
+    let inspectionDate: String
+    let latitude: String
+    let longitude: String
+    let results: String
+    let risk: String
+    let facilityType: String
+    let violations: String
+    let zip: String
+}
