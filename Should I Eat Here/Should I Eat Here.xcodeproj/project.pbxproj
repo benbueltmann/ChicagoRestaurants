@@ -97,12 +97,9 @@
 		985877482177C137005C976E /* Should I Eat Here */ = {
 			isa = PBXGroup;
 			children = (
-				985877492177C137005C976E /* AppDelegate.swift */,
-				9858774B2177C137005C976E /* ViewController.swift */,
-				9858774D2177C137005C976E /* Main.storyboard */,
-				985877502177C138005C976E /* Assets.xcassets */,
-				985877522177C138005C976E /* LaunchScreen.storyboard */,
-				985877552177C138005C976E /* Info.plist */,
+				985877792177C40A005C976E /* Application */,
+				985877772177C3DB005C976E /* ViewControllers */,
+				985877782177C3E7005C976E /* Storyboards */,
 			);
 			path = "Should I Eat Here";
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				9858776B2177C138005C976E /* Info.plist */,
 			);
 			path = "Should I Eat HereUITests";
+			sourceTree = "<group>";
+		};
+		985877772177C3DB005C976E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9858774B2177C137005C976E /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		985877782177C3E7005C976E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9858774D2177C137005C976E /* Main.storyboard */,
+				985877522177C138005C976E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		985877792177C40A005C976E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				985877492177C137005C976E /* AppDelegate.swift */,
+				985877502177C138005C976E /* Assets.xcassets */,
+				985877552177C138005C976E /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
