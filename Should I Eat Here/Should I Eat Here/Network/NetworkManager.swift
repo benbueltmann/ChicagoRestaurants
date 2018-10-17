@@ -21,7 +21,10 @@ enum NetworkManager {
                 
                 do {
                     let restaurants = try decoder.decode([Restaurant].self, from: data)
-                    completion(restaurants)
+                    
+                    DispatchQueue.main.async {
+                        completion(restaurants)
+                    }
                 } catch {
                     print(error)
                 }
