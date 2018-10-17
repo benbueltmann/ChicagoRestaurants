@@ -14,6 +14,7 @@
 		985877542177C138005C976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985877522177C138005C976E /* LaunchScreen.storyboard */; };
 		9858775F2177C138005C976E /* Should_I_Eat_HereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858775E2177C138005C976E /* Should_I_Eat_HereTests.swift */; };
 		9858776A2177C138005C976E /* Should_I_Eat_HereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985877692177C138005C976E /* Should_I_Eat_HereUITests.swift */; };
+		9858777B2177C4B6005C976E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858777A2177C4B6005C976E /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		985877652177C138005C976E /* Should I Eat HereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Should I Eat HereUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		985877692177C138005C976E /* Should_I_Eat_HereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Should_I_Eat_HereUITests.swift; sourceTree = "<group>"; };
 		9858776B2177C138005C976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9858777A2177C4B6005C976E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Network/Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		985877482177C137005C976E /* Should I Eat Here */ = {
 			isa = PBXGroup;
 			children = (
+				9858777C2177C4C2005C976E /* Network */,
 				985877792177C40A005C976E /* Application */,
 				985877772177C3DB005C976E /* ViewControllers */,
 				985877782177C3E7005C976E /* Storyboards */,
@@ -147,6 +150,15 @@
 				985877552177C138005C976E /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		9858777C2177C4C2005C976E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9858777A2177C4B6005C976E /* Restaurant.swift */,
+			);
+			name = Network;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +294,7 @@
 			files = (
 				9858774C2177C137005C976E /* ViewController.swift in Sources */,
 				9858774A2177C137005C976E /* AppDelegate.swift in Sources */,
+				9858777B2177C4B6005C976E /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
