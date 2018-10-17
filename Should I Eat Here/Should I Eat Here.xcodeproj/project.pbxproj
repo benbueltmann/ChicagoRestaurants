@@ -48,7 +48,7 @@
 		985877652177C138005C976E /* Should I Eat HereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Should I Eat HereUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		985877692177C138005C976E /* Should_I_Eat_HereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Should_I_Eat_HereUITests.swift; sourceTree = "<group>"; };
 		9858776B2177C138005C976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9858777A2177C4B6005C976E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Network/Restaurant.swift; sourceTree = "<group>"; };
+		9858777A2177C4B6005C976E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Model/Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		985877482177C137005C976E /* Should I Eat Here */ = {
 			isa = PBXGroup;
 			children = (
-				9858777C2177C4C2005C976E /* Network */,
+				9858777C2177C4C2005C976E /* Model */,
 				985877792177C40A005C976E /* Application */,
 				985877772177C3DB005C976E /* ViewControllers */,
 				985877782177C3E7005C976E /* Storyboards */,
@@ -152,12 +152,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		9858777C2177C4C2005C976E /* Network */ = {
+		9858777C2177C4C2005C976E /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9858777A2177C4B6005C976E /* Restaurant.swift */,
 			);
-			name = Network;
+			name = Model;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
@@ -471,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 329KX36DPY;
-				INFOPLIST_FILE = "Should I Eat Here/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Should I Eat Here/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,7 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 329KX36DPY;
-				INFOPLIST_FILE = "Should I Eat Here/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Should I Eat Here/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
