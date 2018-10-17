@@ -15,6 +15,7 @@
 		9858775F2177C138005C976E /* Should_I_Eat_HereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858775E2177C138005C976E /* Should_I_Eat_HereTests.swift */; };
 		9858776A2177C138005C976E /* Should_I_Eat_HereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985877692177C138005C976E /* Should_I_Eat_HereUITests.swift */; };
 		9858777B2177C4B6005C976E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858777A2177C4B6005C976E /* Restaurant.swift */; };
+		9858777F2177D1E3005C976E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858777E2177D1E3005C976E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		985877692177C138005C976E /* Should_I_Eat_HereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Should_I_Eat_HereUITests.swift; sourceTree = "<group>"; };
 		9858776B2177C138005C976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9858777A2177C4B6005C976E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Model/Restaurant.swift; sourceTree = "<group>"; };
+		9858777E2177D1E3005C976E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		985877482177C137005C976E /* Should I Eat Here */ = {
 			isa = PBXGroup;
 			children = (
+				9858777D2177D17E005C976E /* Network */,
 				9858777C2177C4C2005C976E /* Model */,
 				985877792177C40A005C976E /* Application */,
 				985877772177C3DB005C976E /* ViewControllers */,
@@ -159,6 +162,14 @@
 			);
 			name = Model;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9858777D2177D17E005C976E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9858777E2177D1E3005C976E /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9858777F2177D1E3005C976E /* NetworkManager.swift in Sources */,
 				9858774C2177C137005C976E /* ViewController.swift in Sources */,
 				9858774A2177C137005C976E /* AppDelegate.swift in Sources */,
 				9858777B2177C4B6005C976E /* Restaurant.swift in Sources */,

@@ -8,18 +8,22 @@
 
 import Foundation
 
-class Restaurant: Decodable {
+class Restaurant: Decodable, CustomStringConvertible {
     let address: String
-    let akaName: String
-    let city: String
+    let akaName: String?
+    let city: String?
     let state: String
     let dbaName: String
     let inspectionDate: String
-    let latitude: String
-    let longitude: String
+    let latitude: String?
+    let longitude: String?
     let results: String
-    let risk: String
-    let facilityType: String
-    let violations: String
-    let zip: String
+    let risk: String?
+    let facilityType: String?
+    let violations: String?
+    let zip: String?
+    
+    var description: String {
+        return dbaName
+    }
 }
