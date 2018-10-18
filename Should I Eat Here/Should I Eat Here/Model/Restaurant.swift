@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation.CLLocation
 
 class Restaurant: Decodable, CustomStringConvertible {
     let address: String
@@ -25,5 +26,12 @@ class Restaurant: Decodable, CustomStringConvertible {
     
     var description: String {
         return dbaName
+    }
+    
+    var location: CLLocationCoordinate2D? {
+        guard let latitude = latitude, let longitude = longitude else { return nil }
+        guard let lat = Double(latitude), let lon = Double(longitude) else { return nil }
+        
+        return CLLocationCoordinate2D(latitude: Double(lat), longitude: Double(lon))
     }
 }
