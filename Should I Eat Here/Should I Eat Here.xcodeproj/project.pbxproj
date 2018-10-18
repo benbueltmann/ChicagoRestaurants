@@ -18,6 +18,7 @@
 		9858777F2177D1E3005C976E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9858777E2177D1E3005C976E /* NetworkManager.swift */; };
 		985877812177E4FD005C976E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985877802177E4FD005C976E /* MapViewController.swift */; };
 		987578FC2178E6BC0087CBC2 /* RestaurantDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987578FB2178E6BC0087CBC2 /* RestaurantDetailsTableViewController.swift */; };
+		987578FE2178EE2F0087CBC2 /* ViolationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987578FD2178EE2F0087CBC2 /* ViolationsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		9858777E2177D1E3005C976E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		985877802177E4FD005C976E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		987578FB2178E6BC0087CBC2 /* RestaurantDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsTableViewController.swift; sourceTree = "<group>"; };
+		987578FD2178EE2F0087CBC2 /* ViolationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolationsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				9858774B2177C137005C976E /* RestaurantsTableViewController.swift */,
 				985877802177E4FD005C976E /* MapViewController.swift */,
 				987578FB2178E6BC0087CBC2 /* RestaurantDetailsTableViewController.swift */,
+				987578FD2178EE2F0087CBC2 /* ViolationsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				9858774A2177C137005C976E /* AppDelegate.swift in Sources */,
 				987578FC2178E6BC0087CBC2 /* RestaurantDetailsTableViewController.swift in Sources */,
 				985877812177E4FD005C976E /* MapViewController.swift in Sources */,
+				987578FE2178EE2F0087CBC2 /* ViolationsTableViewController.swift in Sources */,
 				9858777B2177C4B6005C976E /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
