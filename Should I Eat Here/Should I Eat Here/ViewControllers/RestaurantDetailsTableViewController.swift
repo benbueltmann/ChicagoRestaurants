@@ -9,34 +9,38 @@
 import UIKit
 
 class RestaurantDetailsTableViewController: UITableViewController {
-
+    
     var restaurant: Restaurant!
-
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var facilityTypeLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var resultsLabel: UILabel!
+    @IBOutlet weak var riskLabel: UILabel!
+    @IBOutlet weak var violationsLabel: UILabel!
+    @IBOutlet weak var violationsTableViewCell: UITableViewCell!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = restaurant.dbaName.localizedCapitalized
-
+        addressLabel.text = restaurant.address.localizedCapitalized
+        cityLabel.text = restaurant.city?.localizedCapitalized ?? ""
+        stateLabel.text = restaurant.state.localizedCapitalized
+        facilityTypeLabel.text = restaurant.facilityType?.localizedCapitalized ?? ""
+        dateLabel.text = restaurant.inspectionDate.description
+        resultsLabel.text = restaurant.results
+        riskLabel.text = restaurant.risk?.localizedCapitalized ?? ""
+        violationsLabel.text = restaurant.individualViolations.count.description
+        if restaurant.individualViolations.count < 1 {
+            violationsTableViewCell.isUserInteractionEnabled = false
+            violationsTableViewCell.accessoryType = .none
+        }
     }
-
-    // MARK: - Table view data source
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 6
-//    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-         Configure the cell...
-
-        return cell
-    }
-    */
     
     // MARK: - Navigation
     

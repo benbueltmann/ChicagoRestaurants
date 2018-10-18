@@ -28,6 +28,7 @@ class RestaurantsTableViewController: UITableViewController, UISearchControllerD
         let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCellID", for: indexPath)
         cell.textLabel?.text = restaurant.dbaName.localizedCapitalized
         cell.detailTextLabel?.text = restaurant.address.localizedCapitalized
+
         return cell
     }
     

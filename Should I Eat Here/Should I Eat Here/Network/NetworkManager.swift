@@ -18,6 +18,7 @@ enum NetworkManager {
             if let data = data {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
+                decoder.dateDecodingStrategy = .secondsSince1970
                 
                 do {
                     let restaurants = try decoder.decode([Restaurant].self, from: data)

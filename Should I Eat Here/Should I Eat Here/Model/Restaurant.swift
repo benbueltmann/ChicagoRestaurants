@@ -34,4 +34,10 @@ class Restaurant: Decodable, CustomStringConvertible {
         
         return CLLocationCoordinate2D(latitude: Double(lat), longitude: Double(lon))
     }
+    
+    var individualViolations: [String] {
+        guard let violations = violations else { return [] }
+        let split = violations.split(separator: "|")
+        return split.map(String.init)
+    }
 }

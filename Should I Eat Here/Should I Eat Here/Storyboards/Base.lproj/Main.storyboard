@@ -358,6 +358,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Restaurant Name" id="Owo-hw-BX9"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="IbC-Dw-P7y" id="WIc-HV-iEn"/>
+                        <outlet property="cityLabel" destination="tcs-11-szD" id="xjT-fT-QYf"/>
+                        <outlet property="dateLabel" destination="5Pf-tv-E6H" id="rzA-Q8-QDP"/>
+                        <outlet property="facilityTypeLabel" destination="2Wp-om-TNH" id="GGJ-5P-W8l"/>
+                        <outlet property="resultsLabel" destination="Nv7-qc-hhK" id="OCJ-Eg-WZS"/>
+                        <outlet property="riskLabel" destination="Ca5-0z-aPw" id="D3g-bc-voo"/>
+                        <outlet property="stateLabel" destination="DNC-aP-gz2" id="CuZ-Je-aAN"/>
+                        <outlet property="violationsLabel" destination="5NZ-Xp-INE" id="OYF-N4-KEJ"/>
+                        <outlet property="violationsTableViewCell" destination="Jal-cq-hgH" id="k9e-kw-z5c"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fb9-Rl-tqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
