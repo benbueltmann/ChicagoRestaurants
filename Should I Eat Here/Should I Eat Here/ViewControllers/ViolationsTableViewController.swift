@@ -14,6 +14,7 @@ class ViolationsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "\(restaurant.dbaName.localizedCapitalized) Violations"
         tableView.tableFooterView = UIView()
 
     }
