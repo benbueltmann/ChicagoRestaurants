@@ -17,9 +17,7 @@ enum NetworkManager {
         session.dataTask(with: url) { (data, response, error) in
             if let data = data {
                 let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                decoder.dateDecodingStrategy = .secondsSince1970
-                
+                decoder.keyDecodingStrategy = .convertFromSnakeCase                
                 do {
                     let restaurants = try decoder.decode([Restaurant].self, from: data)
                     

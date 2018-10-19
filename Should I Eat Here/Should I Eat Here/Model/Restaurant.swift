@@ -28,6 +28,19 @@ class Restaurant: Decodable, CustomStringConvertible {
         return dbaName
     }
     
+    var dateDescription: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
+
+        guard let date = dateFormatter.date(from: inspectionDate) else {
+            return inspectionDate
+        }
+        
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+
+        return dateFormatter.string(from: date)
+    }
+    
     var location: CLLocationCoordinate2D? {
         guard let latitude = latitude, let longitude = longitude else { return nil }
         guard let lat = Double(latitude), let lon = Double(longitude) else { return nil }
