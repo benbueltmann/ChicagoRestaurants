@@ -12,9 +12,7 @@ class RestaurantsTableViewController: UITableViewController {
     
     var restaurants = [Restaurant]()
     var filteredRestaurants = [Restaurant]()
- 
-    @IBOutlet weak var searchBar: UISearchBar!
-    
+     
     // MARK: - View Life Cycle
 
     override func viewDidLoad() {
@@ -49,7 +47,7 @@ class RestaurantsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as! MapViewController
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationViewController.restaurant = restaurants[indexPath.row]
+            destinationViewController.restaurant = filteredRestaurants[indexPath.row]
         }
     }
 }
@@ -78,7 +76,7 @@ extension RestaurantsTableViewController: UISearchBarDelegate {
         let query = searchText.lowercased()
         
         filteredRestaurants = restaurants.filter { (restaurant) -> Bool in
-            let akaName = restaurant.akaName ?? "thiswillnevermatchipromise"
+            let akaName = restaurant.akaName ?? "qwerty"
             return restaurant.dbaName.lowercased().contains(query) || akaName.lowercased().contains(query)
         }
         tableView.reloadData()

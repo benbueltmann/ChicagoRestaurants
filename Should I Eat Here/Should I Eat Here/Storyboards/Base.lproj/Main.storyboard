@@ -60,9 +60,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Q4Z-EP-je6"/>
-                    <connections>
-                        <outlet property="searchBar" destination="0NX-YL-Qi0" id="Kns-7o-jIR"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3st-dp-V6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
