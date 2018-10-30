@@ -13,7 +13,7 @@ class Restaurant: Decodable, CustomStringConvertible {
     let address: String
     let akaName: String?
     let city: String?
-    let state: String
+    let state: String?
     let dbaName: String
     let inspectionDate: String
     let latitude: String?

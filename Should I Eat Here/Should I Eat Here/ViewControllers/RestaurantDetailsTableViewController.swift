@@ -30,7 +30,7 @@ class RestaurantDetailsTableViewController: UITableViewController {
         self.title = restaurant.dbaName.localizedCapitalized
         addressLabel.text = restaurant.address.localizedCapitalized
         cityLabel.text = restaurant.city?.localizedCapitalized ?? ""
-        stateLabel.text = restaurant.state.localizedCapitalized
+        stateLabel.text = restaurant.state?.localizedCapitalized ?? ""
         facilityTypeLabel.text = restaurant.facilityType?.localizedCapitalized ?? ""
         dateLabel.text = restaurant.dateDescription
         resultsLabel.text = restaurant.results
